@@ -1,0 +1,21 @@
+<html>
+   <head>
+     <title>设置Canvas 宽高 : 600 x 300</title>
+   </head>
+  <body>
+    <canvas id='canvas' width='600' height='300' style="border: thin inset #080000;">
+       不支持canvas
+    </canvas>
+  </body>
+</html>
+
+<script>
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
+   
+context.font = '38pt 微软雅黑';
+context.fillStyle = 'cornflowerblue';
+context.strokeStyle = 'blue';
+context.fillText("你好 Canvas", canvas.width/2 - 150,canvas.height/2 + 15);
+context.strokeText("你好 Canvas", canvas.width/2 - 150,canvas.height/2 + 15 );
+</script>
